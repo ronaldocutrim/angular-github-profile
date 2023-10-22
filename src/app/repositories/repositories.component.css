@@ -9,6 +9,14 @@ ul li:nth-child(even) {
   background-color: #e9eaeb;
 }
 
+ul li small {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50%;
+  display: block;
+}
+
 .user-container {
   display: flex;
   justify-content: center;

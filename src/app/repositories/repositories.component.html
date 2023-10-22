@@ -10,7 +10,7 @@
 
   <ul>
     <li *ngFor="let repository of repositories">
-      {{ repository.name }} <a class="repo-link" [href]="repository.githubUrl">Ir para o repo</a>
+      <small>{{ repository.name }}</small> <a class="repo-link" [href]="repository.githubUrl">Ir para o repo</a>
     </li>
   </ul>
 </div>
