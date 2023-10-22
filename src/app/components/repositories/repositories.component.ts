@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
-import { RepositoryService } from '../service/repositories/repository/repository.service';
-import { Repository } from '../service/entities/repository';
-import { User } from '../service/entities/user';
-import { UserService } from '../service/repositories/user/user.service';
+import { RepositoryService } from '../../service/repositories/repository/repository.service';
+import { Repository } from '../../service/entities/repository';
+import { User } from '../../service/entities/user';
+import { UserService } from '../../service/repositories/user/user.service';
 
 @Component({
   selector: 'app-repositories',

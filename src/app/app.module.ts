@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RepositoriesModule } from './repositories/repositories.module';
+import { RepositoriesModule } from './components/repositories/repositories.module';
 import { HomeModule } from './views/home/home.module';
 
 
