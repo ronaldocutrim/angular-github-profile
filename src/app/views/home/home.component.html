@@ -1,0 +1,27 @@
+<form>
+  <label>Nome do usuario no github</label>
+  <input
+    placeholder="username"
+    type="text"
+    name="username"
+    [(ngModel)]="username"
+    (input)="handleChange($event)"
+  />
+  <button (click)="onSubmit()">Buscar Repositorios</button>
+</form>
+
+<app-alert
+  *ngIf="serviceStatus === 'error'"
+  [message]="alertMessage"
+></app-alert>
+
+<strong *ngIf="username"
+  >{{ serviceStatus === "success" ? "Resultados" : "Buscar" }} lista de
+  repositorios para @{{ username }}</strong
+>
+
+<app-repositories
+  *ngIf="shouldRenderList"
+  (statusServiceEvent)="onSearch($event)"
+  [username]="username"
+></app-repositories>

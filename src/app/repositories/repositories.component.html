@@ -1,0 +1,16 @@
+<div>
+  <div class="user-container" *ngIf="user">
+    <a [href]="user.githubUrl">
+      <img class="image" [src]="user.thumbail" height="100px" width="100px">
+    </a>
+    <h1>{{ user.name }}</h1>
+    <small>{{ user.work }}</small>
+    <small>{{ user.location }}</small>
+  </div>
+
+  <ul>
+    <li *ngFor="let repository of repositories">
+      {{ repository.name }} <a class="repo-link" [href]="repository.githubUrl">Ir para o repo</a>
+    </li>
+  </ul>
+</div>
