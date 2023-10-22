@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  title = 'data-binding';
+  title = 'github-finder-profile';
   username = '';
   shouldRenderList = false
   serviceStatus: 'success' | 'error' | 'empty' =  'empty';
